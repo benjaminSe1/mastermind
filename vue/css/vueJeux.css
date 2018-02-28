@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+
+/*------Gestion en tête-------*/
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+.nav a.home {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 200px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+/*-------- Gestion tableau -------*/
+  .tabjeux{
+    height: 700px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .tabjeux .grandrond
+  {
+    border-radius:500%;
+    width:80px;
+    height:40px;
+    border-width:2px; 
+    border-style:solid; 
+    border-color:black;
+  }
+
+  .tabjeux .petitrond{
+    border-radius:500%;
+    width:30px;
+    height:20px;
+    border-width:2px; 
+    border-style:solid; 
+    border-color:black;
+  }
+
+.petitRondSelection{
+    border-radius:500%;
+    width:50px;
+    height:50px;
+    border:2px;
+    margin-left:5px;
+    margin-right:5px;
+  }
+
+
+
+.petitRondSelection[type='submit']{
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    user-select: none;s
+}
+
+::selection .petitRondSelection[type='submit']{ background: transparent; color:inherit; }
+::-moz-selection .petitRondSelection[type='submit']{ background: transparent; color:inherit; }
+
+
+}
